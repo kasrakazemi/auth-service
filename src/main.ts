@@ -9,9 +9,11 @@ async function bootstrap() {
     options: {
       package: 'auth',
       protoPath: 'C:/Users/kasra/Downloads/Learning/Nest Project/hotel-booking-system/proto/auth.proto',
+       url: '0.0.0.0:5001',
     },
   });
 
+  console.log('🚀 Auth Service is running on gRPC: 0.0.0.0:5001');
   await app.listen();
 }
 
